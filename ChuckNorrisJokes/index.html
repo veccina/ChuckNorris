@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuck Norris Şakaları</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="joke-card">
+            <h1>Chuck Norris Şakaları</h1>
+            <p id="joke">Şaka yükleniyor...</p>
+            <div class="buttons">
+                <button id="newJokeBtn">Başka Bir Şaka</button>
+                <button id="favoriteBtn">Favorilere Ekle</button>
+            </div>
+            <div class="social-buttons">
+                <button onclick="shareJoke('twitter')"><i class="fab fa-twitter"></i></button>
+                <button onclick="shareJoke('facebook')"><i class="fab fa-facebook-f"></i></button>
+            </div>
+        </div>
+        <div class="favorites-section">
+            <h2>Favori Şakalar</h2>
+            <ul id="favoritesList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
